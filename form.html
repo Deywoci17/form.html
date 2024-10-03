@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Registrasi</title>
+</head>
+
+<body>
+    <h2>Form Registrasi</h2>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Biodata</legend>
+            <div class="form-group">
+                <label for="nama">Nama Mahasiswa</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="nim">No Induk Mahasiswa(NIM)</label>
+                <input type="text" id="nim" name="nim" placeholder="1204230018">
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" placeholder="Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <select id="tanggal-lahir" name="tanggal-lahir">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <!-- Tambahkan opsi lainnya -->
+                </select>
+                <select name="tahun-lahir">
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <!-- Tambahkan opsi lainnya -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <input type="radio" id="pria" name="jenis-kelamin" value="pria">
+                <label for="pria" style="width:auto;">Pria</label>
+                <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+                <label for="wanita" style="width:auto;">Wanita</label>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Upload Foto</label>
+                <input type="file" id="foto" name="foto">
+            </div>
+
+            <div class="form-group">
+                <label for="Website">URL Website</label>
+                <input type="text" id="Website" name="Website" placeholder="URL Website">
+            </div>
+
+            <div class="form-group">
+                <label for="universitas">Perguruan Tinggi</label>
+                <input type="text" id="universitas" name="universitas" placeholder="Nama Perguruan Tinggi">
+            </div>
+        </fieldset>
+
+        <!--Info Akun Mahasiswa-->
+        <fieldset>
+            <legend>Info Akun</legend>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="password2">Ulangi Password</label>
+                <input type="password" id="password2" name="password2" placeholder="Ulangi Password Anda">
+            </div>
+        </fieldset>
+
+        <!-- Kemampuan Dasar -->
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <label>
+                <input type="checkbox" name="kemampuan" value="HTML"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="CSS"> CSS
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="Javascript"> Javascript
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="PHP"> PHP
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="MySQL"> MySQL
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="Laravel"> Laravel
+            </label>
+            <label>
+                <input type="checkbox" name="kemampuan" value="React Native"> React Native
+            </label>
+        </fieldset>
+
+        <!-- Tombol Aksi -->
+        <div class="actions">
+            <button type="reset">Reset</button>
+            <button type="submit">Simpan</button>
+        </div>
+    </form>
+    <style>
+        .input {
+            margin-left: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 650px;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group textarea,
+        .form-group select {
+            flex: 1;
+            padding: 5px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .actions {
+            text-align: left;
+        }
+
+        .actions button {
+            margin: 5px;
+        }
+    </style>
+</body>
+
+</html>
